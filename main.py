@@ -10,10 +10,10 @@ stocks_dict = {
   "WMT": "150.97",
   "BA": "206.78"
 }
-tickers = input('Please Enter a ticker symbol (e.g AMZN). Type QUIT to stop: ')
-while not tickers == "QUIT":
-  if tickers in stocks_dict:
-    print('{} : {}' .format(tickers, stocks_dict[tickerss]))
+ticker = input('Please Enter a ticker symbol (e.g AMZN). Type QUIT to stop: ')
+while not ticker == "QUIT":
+  if ticker in stocks_dict:
+    print('{} : {}' .format(ticker, stocks_dict[ticker]))
   else:
-    print('{} not found' .format(tickers))
-  tickers = input('Please enter a ticker symbol (e.g AMZN) Type QUIT to stop: ')
+    print('{} not found' .format(ticker))
+  ticker = input('Please enter a ticker symbol (e.g AMZN) Type QUIT to stop: ')
